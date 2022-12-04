@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:task_app/screens/mobile/mobilescreen.dart';
+import 'package:task_app/screens/mobile/welcoming.dart';
 import 'package:task_app/screens/web/webscreen.dart';
 
 class ScreenLayout extends StatelessWidget {
@@ -11,9 +11,9 @@ class ScreenLayout extends StatelessWidget {
     return ScreenTypeLayout(
       breakpoints:
           const ScreenBreakpoints(desktop: 900, tablet: 600, watch: 300),
-      mobile: const MobileScreen(),
+      mobile: const Welcome(),
       desktop: const WebScreen(),
-      tablet: const MobileScreen(),
+      tablet: const Welcome(),
     );
   }
 }
